@@ -38,5 +38,6 @@ jobs:
                - Funciones/archivos de game.js (o index.html/style.css) probablemente involucrados, citando nombres de función reales del código.
                - Complejidad estimada (baja/media/alta) y qué se necesitaría para implementar la solución.
                No escribas el código de la solución, solo el diagnóstico.
+               El comentario debe estar escrito en formato Markdown válido para GitHub (encabezados con `#`, listas con `-`, `código` o nombres de función entre backticks, bloques de código con ``` si hace falta), para que se renderice correctamente en la UI de issues.
           claude_args: |
             --allowed-tools "Bash(gh issue view:*),Bash(gh issue edit:*),Bash(gh issue comment:*),Bash(gh label list:*),Bash(gh label create:*),Bash(gh api:*)"
