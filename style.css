@@ -176,6 +176,35 @@ body {
   transform: translateX(18px);
 }
 
+/* ---- Selector de skin ---- */
+.skin-select-section {
+  gap: 6px;
+}
+
+#skin-select {
+  background: var(--kbd-bg);
+  border: 1px solid var(--kbd-border);
+  border-radius: 4px;
+  color: var(--value-color);
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 6px 8px;
+  cursor: pointer;
+  transition: background 0.2s, border-color 0.2s;
+}
+
+#skin-select:focus {
+  outline: 1px solid var(--value-color);
+}
+
+/* ---- Ajustes de fondo por skin ---- */
+:root[data-skin="neon"] #board,
+:root[data-skin="neon"] #next-canvas {
+  background: #050507;
+  border-color: #0d0d12;
+}
+
 /* ---- Controles ---- */
 .controls ul {
   list-style: none;
